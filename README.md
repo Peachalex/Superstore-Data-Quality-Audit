@@ -1,0 +1,9 @@
+# Trust but Verify: A Superstore data quality audit project
+
+## Description
+The data quality assessment of the Superstore sales data is to determine whether it is suitable for the business reporting (e.g, financial and operational reporting)
+
+## Business question
+Can the exesctives trust the Superstore dashboard to make decisions about the regional sales. discount strategy, and profitability?
+
+The executives rely on the allocated and cleaned data, visualized through the composite dashboard, to develop strategy and make high-stakes decisions. If the underlying data cannot be trusted, neither can the decisions built upon it. This project audits the data across six dimensions to answer the trust question with evidence.
