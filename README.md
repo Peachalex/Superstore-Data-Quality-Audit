@@ -10,16 +10,16 @@ The executives rely on the allocated and cleaned data, visualized through the co
 
 ## Structure
 Project
-├── composite_scorecard.png
+├── [composite_scorecard.png](composite_scorecard.png)
 ├── data
 │   ├── Superstore_Orders_q1.csv
 │   └── Superstore_Orders_q2.csv
 ├── notebooks
-│   ├── 01_completeness.ipynb
-│   ├── 02_validity.ipynb
-│   ├── 03_uniqueness.ipynb
-│   ├── 04_timeliness.ipynb
-│   ├── 05_consistency.ipynb
-│   ├── 06_accuracy.ipynb
-│   └── 07_composite_scorecard.ipynb
+│   ├── [01_completeness.ipynb](notebooks/01_completeness.ipynb)
+│   ├── [02_validity.ipynb](notebooks/02_validity.ipynb)
+│   ├── [03_uniqueness.ipynb](notebooks/03_uniqueness.ipynb)
+│   ├── [04_timeliness.ipynb](notebooks/04_timeliness.ipynb)
+│   ├── [05_consistency.ipynb](notebooks/05_consistency.ipynb)
+│   ├── [06_accuracy.ipynb](notebooks/06_accuracy.ipynb)
+│   └── [07_composite_scorecard.ipynb](notebooks/07_composite_scorecard.ipynb)
 └── README.md
