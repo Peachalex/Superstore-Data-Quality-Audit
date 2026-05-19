@@ -7,3 +7,5 @@ The data quality assessment of the Superstore sales data is to determine whether
 Can the exesctives trust the Superstore dashboard to make decisions about the regional sales. discount strategy, and profitability?
 
 The executives rely on the allocated and cleaned data, visualized through the composite dashboard, to develop strategy and make high-stakes decisions. If the underlying data cannot be trusted, neither can the decisions built upon it. This project audits the data across six dimensions to answer the trust question with evidence.
+
+## Structure
