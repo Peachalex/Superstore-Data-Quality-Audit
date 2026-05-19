@@ -9,7 +9,8 @@ Can the exesctives trust the Superstore dashboard to make decisions about the re
 The executives rely on the allocated and cleaned data, visualized through the composite dashboard, to develop strategy and make high-stakes decisions. If the underlying data cannot be trusted, neither can the decisions built upon it. This project audits the data across six dimensions to answer the trust question with evidence.
 
 ## Structure
-Project
+```
+.
 ├── [composite_scorecard.png](composite_scorecard.png)
 ├── data
 │   ├── Superstore_Orders_q1.csv
@@ -23,6 +24,7 @@ Project
 │   ├── [06_accuracy.ipynb](notebooks/06_accuracy.ipynb)
 │   └── [07_composite_scorecard.ipynb](notebooks/07_composite_scorecard.ipynb)
 └── README.md
+```
 
 ## Composite Data Quality Scoreboard
 ![Composite Scoreboard](composite_scorecard.png)
