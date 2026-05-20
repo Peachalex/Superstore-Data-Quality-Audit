@@ -56,6 +56,6 @@ Standard six-dimension data quality framework:
 This project is built as part of a professional portfolio to demonstrate end-to-end data quality assessment skills. It reflects a transition from tactical data cleaning to strategic data quality analysis, with a focus on expressing business risk to non-technical stakeholders.
 
 ## Author
-Name: Siyuan Tao
-LinkedIn: www.linkedin.com/in/alext41
-Email: peachalex233@gmail.com
+- **Name:** Siyuan Tao
+- **LinkedIn:** www.linkedin.com/in/alext41
+- **Email:** peachalex233@gmail.com
