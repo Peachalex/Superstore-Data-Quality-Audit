@@ -44,7 +44,7 @@ Standard six-dimension data quality framework:
 - **Consistency:** Does data contradict itself across fields?
 - **Accuracy:** Does data match an external source of truth?
 
-## Tools and Technologiesd
+## Tools and Technologies
 
 - **Language:** Python 3.x
 - **Libraries:** Pandas, NumPy, Matplotlib
