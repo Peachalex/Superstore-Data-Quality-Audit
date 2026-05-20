@@ -9,20 +9,65 @@ Can the exesctives trust the Superstore dashboard to make decisions about the re
 The executives rely on the allocated and cleaned data, visualized through the composite dashboard, to develop strategy and make high-stakes decisions. If the underlying data cannot be trusted, neither can the decisions built upon it. This project audits the data across six dimensions to answer the trust question with evidence.
 
 ## Structure
-Project
-├── [composite_scorecard.png](composite_scorecard.png)
+```
+.
+├── composite_scorecard.png
 ├── data
 │   ├── Superstore_Orders_q1.csv
 │   └── Superstore_Orders_q2.csv
 ├── notebooks
-│   ├── [01_completeness.ipynb](notebooks/01_completeness.ipynb)
-│   ├── [02_validity.ipynb](notebooks/02_validity.ipynb)
-│   ├── [03_uniqueness.ipynb](notebooks/03_uniqueness.ipynb)
-│   ├── [04_timeliness.ipynb](notebooks/04_timeliness.ipynb)
-│   ├── [05_consistency.ipynb](notebooks/05_consistency.ipynb)
-│   ├── [06_accuracy.ipynb](notebooks/06_accuracy.ipynb)
-│   └── [07_composite_scorecard.ipynb](notebooks/07_composite_scorecard.ipynb)
+│   ├── 01_completeness.ipynb
+│   ├── 02_validity.ipynb
+│   ├── 03_uniqueness.ipynb
+│   ├── 04_timeliness.ipynb
+│   ├── 05_consistency.ipynb
+│   ├── 06_accuracy.ipynb
+│   └── 07_composite_scorecard.ipynb
 └── README.md
+```
 
 ## Composite Data Quality Scoreboard
 ![Composite Scoreboard](composite_scorecard.png)
+
+## Key Findings
+
+**Conclusion: NOT FIT for financial reporting without remediation.**
+
+| Dimension | Findings|
+| :-- | :-- | 
+| **Completeness**| 1,762 missing Profit records. No 'Cost' column prevents imputation. 127 missing Discount records. 97 missing Region records. |
+| **Validity**| All input fields (Sales, Discount, Region) correctly formatted. But profit required type coercion from string. |
+| **Uniqueness** | 240 intra-file business key duplicates. 121 cross-file Order ID conflicts across Sales, Profit, and Product fields.|
+| **Timeliness** | 8,629 anomallies. Pattern suggests 'Shipping_Delay_Day' is a data model artifact, not a mesured generic metric. |
+| **Consistency** | 0.03% Profit exceeds Sales.1.55* full-price transaction generate a loss.|
+| **Accuracy** | Requires an external source of truth for cross-referencing |
+
+**Core Insights:** The financial outputs are broken in three ways: absennce of records (missing profit, discount records), contradiction (duplicated Sales/ Profits), and version conflicts (cross-file discrepancies).
+
+
+## Methodology
+
+Standard six-dimension data quality framework:
+
+- **Completeness:** Are required fields present?
+- **Validity:** Do values conform to expected formats and ranges?
+- **Uniqueness:** Are there duplicate records?
+- **Timeliness:** Is the data current and past logicial?
+- **Consistency:** Does data contradict itself across fields?
+- **Accuracy:** Does data match an external source of truth?
+
+## Tools and Technologies
+
+- **Language:** Python 3.x
+- **Libraries:** Pandas, NumPy, Matplotlib
+- **Environemnt:** Jupyter Notebook
+- **Version Control:** Git & GitHub
+
+## About this project:
+
+This project is built as part of a professional portfolio to demonstrate end-to-end data quality assessment skills. It reflects a transition from tactical data cleaning to strategic data quality analysis, with a focus on expressing business risk to non-technical stakeholders.
+
+## Author
+- **Name:** Siyuan Tao
+- **LinkedIn:** www.linkedin.com/in/alext41
+- **Email:** peachalex233@gmail.com
