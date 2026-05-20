@@ -33,6 +33,18 @@ The executives rely on the allocated and cleaned data, visualized through the co
 
 **Conclusion: NOT FIT for financial reporting without remediation.**
 
+| Dimension | Findings|
+| :-- | :-- | 
+| **Completeness**| 1,762 missing Profit records. No 'Cost' column prevents imputation. 127 missing Discount records. 97 missing Region records. |
+| **Validity**| All input fields (Sales, Discount, Region) correctly formatted. But profit required type coercion from string. |
+| **Uniqueness** | 240 intra-file business key duplicates. 121 cross-file Order ID conflicts across Sales, Profit, and Product fields.|
+| **Timeliness** | 8,629 anomallies. Pattern suggests 'Shipping_Delay_Day' is a data model artifact, not a mesured generic metric. |
+| **Consistency** | 0.03% Profit exceeds Sales.1.55* full-price transaction generate a loss.|
+| **Accuracy** | Requires an external source of truth for cross-referencing |
+
+**Core Insights:** The financial outputs are broken in three ways: absennce of records (missing profit, discount records), contradiction (duplicated Sales/ Profits), and version conflicts (cross-file discrepancies).
+
+
 ## Methodology
 
 Standard six-dimension data quality framework:
